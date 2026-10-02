@@ -7,25 +7,66 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
 <div id="header"></div>
 
 <main class="site content">
-<!-- ======================== EDIT THIS TEXT ======================== -->
-GALLERY
+
 <p>
 INSTAGRAM — <a href="https://www.instagram.com/alex.kim.sing/" target="_blank">@alex.kim.sing</a>
 </p>
 
-  <iframe
-    src="../downloads/27.7. Orgelkonzert.pdf"
-    width="100%"
-    height="800px"
-    style="border: none;">
-</iframe>
-<!-- ====================== END EDITABLE TEXT ======================= -->
+<p>----------------------------------------------------------------</p>
+
+<!-- LUDWIG ORGEL — FULL WIDTH -->
+
+<p>
+<img
+    src="/selection%202.10.26/Ludwig-Orgel-Koenigsfeld-13%20copy.jpeg"
+    alt="Alexander Kim at the Ludwig organ in Königsfeld"
+    style="width: 100%; height: auto;">
+</p>
+
+
+<!-- SENIOR RECITAL — CENTERED -->
+
+<p style="text-align: center;">
+<img
+    src="/selection%202.10.26/senior%20recital.JPG"
+    alt="Alexander Kim at his senior recital"
+    style="width: 70%; max-width: 600px; height: auto;">
+</p>
+
+
+<!-- TWO PHOTOS SIDE BY SIDE -->
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+
+    <div style="flex: 1;">
+        <img
+            src="/selection%202.10.26/conducting-close.jpg"
+            alt="Alexander Kim conducting"
+            style="width: 100%; height: auto;">
+    </div>
+
+    <div style="flex: 1;">
+        <img
+            src="/selection%202.10.26/guitar.jpg"
+            alt="Alexander Kim with guitar"
+            style="width: 100%; height: auto;">
+    </div>
+
+</div>
+
 </main>
 
-<div id="footer"></div>
-<script src="/site.js"></script>
+<script>
+fetch("/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("header").innerHTML = data;
+    });
+</script>
+
 </body>
 </html>
