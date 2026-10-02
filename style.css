@@ -101,3 +101,44 @@ a {
         width: 100%;
     }
 }
+
+.gallery-wide {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-centered {
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.gallery-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-half {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .gallery-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery-centered {
+        width: 100%;
+    }
+}
