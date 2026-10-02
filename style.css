@@ -1,0 +1,103 @@
+body {
+    background: #f6f0e3;
+    color: #111;
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.site {
+    width: min(900px, calc(100% - 20px));
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+}
+
+.header {
+    white-space: normal;
+}
+
+.header-name {
+    margin-bottom: 2px;
+}
+
+.header-role {
+    text-transform: lowercase;
+    margin-bottom: 2px;
+}
+
+.header-email {
+    margin-bottom: 2px;
+}
+
+.language {
+    margin-bottom: 18px;
+}
+
+.nav {
+    line-height: 1.6;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #111;
+    margin: 10px 0 28px 0;
+}
+
+.content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.content h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 24px 0;
+}
+
+.content p {
+    margin: 0 0 1em 0;
+}
+
+.engagement {
+    margin-bottom: 30px;
+}
+
+.links {
+    margin-top: 4px;
+}
+
+.footer {
+    margin-top: 45px;
+    padding-top: 12px;
+    border-top: 1px solid #111;
+}
+
+.instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.instagram svg {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 14px;
+    }
+    .site {
+        width: 100%;
+    }
+}
